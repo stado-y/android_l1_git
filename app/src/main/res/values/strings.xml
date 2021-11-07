@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">myproj</string>
+    <string name="MainActivityChooserTitle">Choose the app</string>
+    <string name="MainActivityChooserEmail">valera@gmail.com</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.myproj
 
 import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.MainActivityBtnSendEmail.setOnClickListener {
             Log.d("MainActivity","btnShare clicked!")
+
+
+            val mediaPlayer = MediaPlayer.create(this, R.raw.drum)
+            mediaPlayer?.start()
+
 
             val intent = Intent(Intent.ACTION_SEND)
             intent.type = "text/plain"
